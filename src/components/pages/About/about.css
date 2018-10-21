@@ -1,0 +1,44 @@
+.about-wrapper{
+    position: relative;
+    height: 1000px;
+    z-index: -1;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Roboto Slab', sans-serif;
+}
+.about-wrapper h1{
+    position: absolute;
+    display: inline-block;
+    margin: 0 auto;
+    top:0;
+    left: 0;
+    overflow: visible;
+    z-index: -1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 5rem;
+}
+.about-wrapper h1:before{
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 400px;
+    top: 50px;
+    left: 50px;
+    background: rgba(238,192,108,0.7);
+    overflow: visible;
+    z-index: 2;
+}
+.about-wrapper h1:after{
+    position: absolute;
+    content: '';
+    top: 100px;
+    left: 100px;
+    width: 250px;
+    height: 400px;
+    background: rgba(238,192,108,0.7);
+    z-index: 5;
+}
+.about-image{
+    margin: 150px 0px 100px 20px;
+}
