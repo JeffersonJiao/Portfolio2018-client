@@ -7,7 +7,7 @@ export class Contact extends Component {
   render() {
     return (
       <React.Fragment>
-          <div id="contact" className="contact-wrapper">
+          <div id="contact" name="contact" className="contact-wrapper">
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12">

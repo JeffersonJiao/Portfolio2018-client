@@ -1,44 +1,167 @@
+.about-wrapper *{
+    overflow: hidden;
+}
 .about-wrapper{
     position: relative;
-    height: 1000px;
-    z-index: -1;
     margin-top: 100px;
     text-align: center;
     font-family: 'Roboto Slab', sans-serif;
+    margin-bottom: 100px;
 }
-.about-wrapper h1{
-    position: absolute;
-    display: inline-block;
-    margin: 0 auto;
-    top:0;
-    left: 0;
-    overflow: visible;
-    z-index: -1;
+
+.about-items{
+    background-color: #eee;
+    text-align: left;
+    padding: 10px 20px;
+}
+.about-intro{
+    background-color: transparent;
+    text-align: right;
+}
+.about-intro h2{
+    color: #e1b53c;
+}
+.about-items p{
+    margin-top: 40px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 5rem;
+    color: rgba(38, 38, 38,1);
 }
-.about-wrapper h1:before{
-    position: absolute;
-    content: '';
-    width: 250px;
-    height: 400px;
-    top: 50px;
-    left: 50px;
-    background: rgba(238,192,108,0.7);
-    overflow: visible;
-    z-index: 2;
+.item-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align:left;
+    min-height: 150px;
+    overflow: hidden;
 }
-.about-wrapper h1:after{
-    position: absolute;
-    content: '';
-    top: 100px;
-    left: 100px;
-    width: 250px;
-    height: 400px;
-    background: rgba(238,192,108,0.7);
-    z-index: 5;
+button{
+    cursor: pointer;
 }
-.about-image{
-    margin: 150px 0px 100px 20px;
+.about-skills{
+    background: #eee;
+    min-height: 100px;
+    margin-top: 100px;
+    padding: 50px 0px;
+    padding-bottom: 0px;
 }
+.about-skills h5{
+    color: rgba(38, 38, 38,1);
+}
+.other-skills-wrapper{
+    background-image: linear-gradient(0deg,rgba(38, 38, 38,0.3),rgba(38, 38, 38,0.3)),url(../../../assets/images/skillsbg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 100px;
+}
+.CircularProgressbar-path{ 
+    stroke: #e1b53c !important; 
+    -o-transition: 3s !important;
+    -ms-transition:3s !important;
+    -moz-transition:3s !important;
+    -webkit-transition:3s !important;
+    transition:3s !important;
+
+}
+.CircularProgressbar-trail{
+    stroke: rgba(0,0,0,0.4) !important; 
+}
+.CircularProgressbar-text{ 
+    fill: #000 !important; 
+}
+.CircularProgressbar-background{ 
+    fill: #fff !important; 
+}
+.progress-bar{
+    background: transparent !important;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.skills-title{
+    overflow: hidden;
+    margin: 40px auto;
+    color: #e1b53c;
+}
+.row{
+    margin: 20px auto;
+}
+.other-skills{
+    margin: 50px auto;
+    margin-bottom: 100px;
+}
+
+.hexagon {
+    position: relative;
+    display: inline-block;
+    width: 280px;
+    height: 140px;
+    transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    overflow: hidden;
+    visibility: hidden;
+    margin-left:
+  }
+  .hexagon-inside{
+    width: 100%;
+    height: 100%;
+    background: green;
+    transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    overflow: hidden;
+  }
+  
+  .hexagon-image{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      background-color: #e1b53c;
+      transform: rotate(-60deg);
+      -moz-transform: rotate(-60deg);
+      -ms-transform: rotate(-60deg);
+      -o-transform: rotate(-60deg);
+      -webkit-transform: rotate(-60deg);
+      visibility: visible;
+    }
+    .hexagon:nth-child(2n) .hexagon-image{
+        background-color: #eee;
+    }
+    .hexagon:nth-child(3n) .hexagon-image{
+        background-color: #6C7A89;
+    }
+    .other-skills .hexagon:not(:first-child){
+        margin-left: -115px;
+    }
+    .other-skills h2{
+        margin: 50px auto;
+        color: #e1b53c;
+    }
+    .hex-content{
+        transform: rotate(120deg);
+        -moz-transform: rotate(120deg);
+        -ms-transform: rotate(120deg);
+        -o-transform: rotate(120deg);
+        -webkit-transform: rotate(120deg);
+        color: #fff;
+    }
+    .icons-span{
+        font-family: 'Open Sans', sans-serif;
+    }
+    @media only screen and (max-width: 600px) {
+        .other-skills .hexagon{
+            margin: 0 auto;
+        }
+        .other-skills .hexagon:nth-child(even):after{
+            content: '';
+            display: block;
+        }
+    }

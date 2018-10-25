@@ -7,24 +7,14 @@ export class Nav extends Component {
         windowPos :0,
     }
     
-    handleScroll = () =>{
-        let windowPos = window.pageYOffset;
-        this.setState({windowPos});
-        }
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll);
-        }
-
-    componentWillUnmount(){
-        window.removeEventListener('scroll',this.handleScroll);
-        }
+    componentWillReceiveProps(props){
+          this.setState({windowPos:props.scrollPos});
+      }
     scrollToTop = () =>{
         scroll.scrollToTop();
         }
-    handleSetActive = (to) => {
-        console.log(to);
-        }
     render() {
+       
         return (
         <React.Fragment>
             <div className={"nav-wrapper " + (this.state.windowPos > 50 ? 'nav-fixed' : 'nav-relative')}>
@@ -35,17 +25,17 @@ export class Nav extends Component {
                     </div>
                     <ul className="float-right">
                         <li >
-                            <Link activeClass="active" className="menu" to="about" spy={true} smooth={true} offset={-100} duration={500} onSetActive={this.handleSetActive}>
+                            <Link activeClass="active" className="menu" to="about" spy={true} smooth={true} offset={-100} duration={500} >
                                 About me
                             </Link>
                         </li>
                         <li >
-                            <Link activeClass="active" className="menu" to="works" spy={true} smooth={true} offset={-100} duration={500} onSetActive={this.handleSetActive}>
+                            <Link activeClass="active" className="menu" to="works" spy={true} smooth={true} duration={500} >
                                 My works
                             </Link>
                         </li>
                         <li >
-                            <Link activeClass="active" className="menu" to="contact" spy={true} smooth={true} offset={-100} duration={500} onSetActive={this.handleSetActive}>
+                            <Link activeClass="active" className="menu" to="contact" spy={true} smooth={true}  duration={500} onSetActive={this.handleSetActive}>
                                 Contact me
                             </Link>
                         </li>

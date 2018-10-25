@@ -9,9 +9,10 @@ export class Works extends Component {
       <React.Fragment>
           <div id="works" className="works-wrapper">
                 <div className="container">
+                    <h1>My Works</h1>
                     <div className="row">
                         <div className="col-sm-12">
-                            <h1>My works</h1>
+                            
                         </div>
                     </div>
                 </div>

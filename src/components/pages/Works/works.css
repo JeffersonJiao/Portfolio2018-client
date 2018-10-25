@@ -1,3 +1,13 @@
 .works-wrapper{
     min-height: 100vh;
+    padding-top: 80px;
+    background: #fff;
+    text-align: left;
+}
+.works-wrapper h1{
+    position: absolute;
+    font-size: 6rem;
+    color: rgba(225,181,60,0.5);
+    overflow: hidden;
+
 }

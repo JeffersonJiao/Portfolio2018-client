@@ -1,19 +1,35 @@
 import React, { Component } from 'react'
+import AOS from 'aos';
 import {About} from './components/pages/About'
 import './App.css'
 import {Header} from './components/pages/Header'
 import {Works} from  './components/pages/Works'
 import {Contact} from './components/pages/Contact'
- 
+import {Footer} from './components/pages/Footer'
+AOS.init();
 class App extends Component {
+  state = {
+    windowPos :0,
+  }
+  handleScroll = () =>{
+    let windowPos = window.pageYOffset;
+    this.setState({windowPos});
+    }
+componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+    }
 
+componentWillUnmount(){
+    window.removeEventListener('scroll',this.handleScroll);
+    }
   render() {
     return (
       <React.Fragment>
-          <Header/>
+          <Header scrollPos={this.state.windowPos}/>
           <About/>
           <Works/>
           <Contact/>
+          <Footer/>
       </React.Fragment>
     );
   }

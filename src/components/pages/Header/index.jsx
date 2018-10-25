@@ -27,6 +27,7 @@ export class Header extends Component {
       }
     }
   }
+  
   playParticle = () =>{
     var newSpeed = this.state.particles.move.speed;
     (newSpeed !== 0) ? newSpeed = 0 : newSpeed = 3;
@@ -55,7 +56,7 @@ export class Header extends Component {
             style={particleStyle}
           />
             <div className="container">
-              <Nav/>
+              <Nav scrollPos={this.props.scrollPos}/>
               <div className="header-inside row">
                   <div className="col-sm-12">
                     <h1>JEFFERSON JIAO</h1>

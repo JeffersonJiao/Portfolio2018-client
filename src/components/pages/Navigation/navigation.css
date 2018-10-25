@@ -1,21 +1,17 @@
 .nav-wrapper{
+    overflow: hidden;
     width: 100%;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
 }
 nav{
     position: relative;
     display: block;
     padding: 10px;
     padding-top: 22px;
-    color: #eee;
+    color: #fff;
 }
 
 .nav-fixed{
-    background: rgba(15,1,1,1);
+    background: #fff;
     position: fixed;
     left: 0;
     top:0;
@@ -23,11 +19,18 @@ nav{
     width: 100%;
     margin: 0 auto;
     z-index: 1000;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.3);
+}
+.nav-fixed nav{
+    color: rgba(38, 38, 38,1);;    
 }
 .nav-relative{
     position: absolute;
     top:0;
     left: 0;
+}
+.nav-relative .menu:after{
+    background-color: #fff;
 }
 ul li{
     display: inline-block;
@@ -35,13 +38,14 @@ ul li{
 }
 nav a{
     font-family: 'Open Sans', sans-serif;
-    color: #eee;
+    color: #000;
 }
 .logo{
     cursor: pointer;
+    font-family: 'Oswald', sans-serif;
 }
 .active{
-    background-color: white;
-    color: black !important;
+    background-color: rgba(38, 38, 38,1);;
+    color: white !important;
     padding: 2px 5px; 
 }
