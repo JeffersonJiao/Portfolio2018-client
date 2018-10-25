@@ -124,7 +124,7 @@ button{
       justify-content: center;
       width: 100%;
       height: 100%;
-      background-color: #e1b53c;
+      background-color: #ABB7B7;
       transform: rotate(-60deg);
       -moz-transform: rotate(-60deg);
       -ms-transform: rotate(-60deg);
@@ -133,10 +133,19 @@ button{
       visibility: visible;
     }
     .hexagon:nth-child(2n) .hexagon-image{
-        background-color: #eee;
+        background-color: #e1b53c;;
     }
     .hexagon:nth-child(3n) .hexagon-image{
-        background-color: #6C7A89;
+        background-color:  #6C7A89;
+    }
+    .hex-second-layer .hexagon:first-child .hexagon-image{
+        background-color:  #6C7A89;
+    }
+    .hex-second-layer .hexagon:nth-child(2) .hexagon-image{
+        background-color:  #e1b53c;
+    }
+    .hex-second-layer .hexagon:nth-child(3) .hexagon-image{
+        background-color:  #ABB7B7;
     }
     .other-skills .hexagon:not(:first-child){
         margin-left: -115px;

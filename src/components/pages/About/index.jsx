@@ -239,7 +239,7 @@ export class About extends Component {
                             <div data-aos="flip-up" data-aos-delay="0" className="hexagon">
                                     <div className="hexagon-inside">
                                         <div className="hexagon-image">
-                                            <div class="hex-content">
+                                            <div className="hex-content">
                                                 <span>PHP</span>
                                             </div>
                                         </div>
@@ -248,7 +248,7 @@ export class About extends Component {
                                 <div data-aos="flip-up" data-aos-delay="50" className="hexagon">
                                     <div className="hexagon-inside">
                                         <div className="hexagon-image">
-                                            <div class="hex-content">
+                                            <div className="hex-content">
                                                 <span>LARAVEL</span>
                                             </div>
                                         </div>
@@ -257,7 +257,7 @@ export class About extends Component {
                                 <div data-aos="flip-up" data-aos-delay="150" className="hexagon">
                                     <div className="hexagon-inside">
                                         <div className="hexagon-image">
-                                            <div class="hex-content">
+                                            <div className="hex-content">
                                                 <span>REACT</span>
                                             </div>
                                         </div>
@@ -266,18 +266,18 @@ export class About extends Component {
                                 <div data-aos="flip-up" data-aos-delay="200"  className="hexagon">
                                     <div className="hexagon-inside">
                                         <div className="hexagon-image">
-                                            <div class="hex-content">
+                                            <div className="hex-content">
                                                 <span>NODE</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-sm-10 offset-sm-1">
+                            <div className="col-sm-10 offset-sm-1 hex-second-layer">
                             <div data-aos="flip-up" data-aos-delay="250" className="hexagon">
                                     <div className="hexagon-inside">
                                         <div className="hexagon-image">
-                                            <div class="hex-content">
+                                            <div className="hex-content">
                                                 <span>EXPRESS</span>
                                             </div>
                                         </div>
@@ -286,7 +286,7 @@ export class About extends Component {
                                 <div data-aos="flip-up" data-aos-delay="300" className="hexagon">
                                     <div className="hexagon-inside">
                                         <div className="hexagon-image">
-                                            <div class="hex-content">
+                                            <div className="hex-content">
                                                 <span>GIT</span>
                                             </div>
                                         </div>
@@ -295,7 +295,7 @@ export class About extends Component {
                                 <div data-aos="flip-up" data-aos-delay="350" className="hexagon">
                                     <div className="hexagon-inside">
                                         <div className="hexagon-image">
-                                            <div class="hex-content">
+                                            <div className="hex-content">
                                                 <span>WORDPRESS</span>
                                             </div>
                                         </div>
@@ -306,7 +306,7 @@ export class About extends Component {
                                 <div data-aos="flip-up" data-aos-delay="400" className="hexagon">
                                     <div className="hexagon-inside">
                                         <div className="hexagon-image">
-                                            <div class="hex-content">
+                                            <div className="hex-content">
                                                 <span>BOOTSTRAP</span>
                                             </div>
                                         </div>
@@ -315,7 +315,7 @@ export class About extends Component {
                                 <div data-aos="flip-up" data-aos-delay="450"className="hexagon">
                                     <div className="hexagon-inside">
                                         <div className="hexagon-image">
-                                            <div class="hex-content">
+                                            <div className="hex-content">
                                                 <span>HEROKU</span>
                                             </div>
                                         </div>
@@ -324,7 +324,7 @@ export class About extends Component {
                                 <div data-aos="flip-up" data-aos-delay="500" className="hexagon">
                                     <div className="hexagon-inside">
                                         <div className="hexagon-image">
-                                            <div class="hex-content">
+                                            <div className="hex-content">
                                                 <span>JQUERY</span>
                                             </div>
                                         </div>
@@ -333,7 +333,7 @@ export class About extends Component {
                                 <div data-aos="flip-up" data-aos-delay="550" className="hexagon">
                                     <div className="hexagon-inside">
                                         <div className="hexagon-image">
-                                            <div class="hex-content">
+                                            <div className="hex-content">
                                                 <span>RESTful APIs</span>
                                             </div>
                                         </div>
