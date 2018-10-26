@@ -50,7 +50,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 10;
+    z-index: 1;
 }
 .profile-picture-half{
     position: absolute;

@@ -5,6 +5,10 @@ export class Nav extends Component {
 
     state = {
         windowPos :0,
+        isMobile: false,
+        isShowing: false,
+        width: 0,
+        height: 0,
     }
     
     componentWillReceiveProps(props){
@@ -13,12 +17,49 @@ export class Nav extends Component {
     scrollToTop = () =>{
         scroll.scrollToTop();
         }
+    handleToggle = () =>{
+        this.setState({isMobile: !this.state.isMobile});
+    }
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+      }
+      
+    componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+    updateWindowDimensions = () => {
+        this.setState({ width: window.innerWidth, height: window.innerHeight },()=>{
+            if(this.state.width <= 600){
+                this.setState({isShowing: true})
+            }
+            else{
+                this.setState({isShowing: false})
+            }
+        });
+      }
+    renderBurger = () => {
+        if(this.state.isShowing){
+            return(
+                <div className="burger-wrapper">
+                    <div className={this.state.isMobile ? "burger-container change": "burger-container" } onClick={this.handleToggle}>
+                        <div className="bar1"></div>
+                        <div className="bar2"></div>
+                        <div className="bar3"></div>
+                    </div>
+                </div>
+            );
+        }
+        else{
+            return (<span></span>)
+        }
+    }
     render() {
-       
         return (
         <React.Fragment>
-            <div className={"nav-wrapper " + (this.state.windowPos > 50 ? 'nav-fixed' : 'nav-relative')}>
-                <nav className="container">
+            {this.renderBurger()}
+            <div className={"nav-wrapper " + (this.state.windowPos > 50 ? 'nav-fixed ' : 'nav-relative ') + (this.state.isMobile? 'overlay': '')}>
+                <nav className={"container " + (this.state.isMobile? 'show' : '')} >
                     <div className="float-left">
                         <a className="logo" onClick={this.scrollToTop}> Jeff Jiao
                         </a>

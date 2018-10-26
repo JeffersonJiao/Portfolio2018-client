@@ -4,6 +4,7 @@
     padding-top: 80px;
     background: #fff;
     text-align: left;
+
 }
 .works-wrapper h1{
     position: absolute;
@@ -15,4 +16,31 @@
     color: rgba(225,181,60,0.3);
     overflow: hidden;
 
+}
+.works-row{
+    margin-bottom: 150px;
+}
+.works-wrapper *{
+    overflow: hidden;
+}
+.screenshots{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 5px;
+}
+.project-description{
+    text-align: justify;
+}
+.project-description p{
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .screenshots{
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    .works-row{
+        margin-bottom: 20px;
+    }
 }

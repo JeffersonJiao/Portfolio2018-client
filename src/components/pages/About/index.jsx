@@ -42,19 +42,14 @@ export class About extends Component {
                     When Talent Fails To Work Hard
                   </h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged.
-                  </p>
-                  <p>
-                    It was popularised in the 1960s with the release of Letraset
-                    sheets containing Lorem Ipsum passages, and more recently
-                    with desktop publishing software like Aldus PageMaker
-                    including versions of Lorem Ipsum.
+                  Jefferson Jiao is an aspiring full-stack developer who specializes in back-end development.
+                  He enjoys designing and developing web and mobile applications that will showcase a client’s brand.
+                  Jefferson loves a good challenge and is willing to adapt to any changes and 
+                  requests if necessary to ensure satisfaction with his work. 
+                  He is always seeking for improvement, new ideas, and new concepts to learn – 
+                  just about anything that will enhance his skills. He is eager for growth in this fast-paced 
+                  industry because it will push him to overcome challenges and become a skilled developer who is willing 
+                  to put his best work with every client.
                   </p>
                   <Link
                     className="btn"

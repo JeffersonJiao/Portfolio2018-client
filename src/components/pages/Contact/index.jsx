@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-
+import AOS from 'aos'
 import './contact.css'
 
+AOS.init({
+    duration: 1000
+  });
 export class Contact extends Component {
   state = {
       name: '',
       email: '',
       message: '',
+      formMsg: '',
       formErrors: {
           email: '',
           name: '',
@@ -32,6 +36,9 @@ export class Contact extends Component {
                     name,
                     email,
                     message
+                }).then(res=>{
+                    console.log(res);
+                    console.log(res.data);
                 })
             }  
         })
@@ -49,7 +56,7 @@ export class Contact extends Component {
                     <h1>Contact Me</h1>
                     <div className="row">
                         <div className="col-sm-12 col-md-8 offset-md-2">
-                        <form onSubmit={this.handleSubmit}>
+                        <form data-aos="slide-right" onSubmit={this.handleSubmit}>
                             <div className="form-group">
                                 <label htmlFor="name">*Name</label>
                                 <input type="text" className="form-control" id="name" placeholder="Enter your name here..." name="name" onChange={this.handleChange}/>
@@ -63,18 +70,17 @@ export class Contact extends Component {
                                 <textarea className="form-control" id="message" name="message" rows="3" onChange={this.handleChange}></textarea>
                             </div>
                             
-                            <button type="submit" className="btn">Submit</button>
-                        </form>
-                        <form className="container" >
+                            <button type="submit" className="btn" >Submit</button>
                             <div className="form-group">
                                 <div className="feedback">
-                                    
-                                       <p>{this.state.formErrors.name}</p>
-                                       <p>{this.state.formErrors.email}</p>
-                                       <p>{this.state.formErrors.message}</p>
+                                    <p>{this.state.formErrors.name}</p>
+                                    <p>{this.state.formErrors.email}</p>
+                                    <p>{this.state.formErrors.message}</p>
+                                    <p>{this.state.formMsg}</p>
                                 </div>
                             </div>
                         </form>
+                 
                         </div>
                     </div>
                 </div>
